@@ -76,15 +76,7 @@ app.delete('/cars/:id', async (req, res) => {
   const result = await carsCollection.deleteOne(query);
   res.json(result);
 })
-//POST single order API 
-// app.post('/cars/:id',async(req,res) => {
-//   const car = req.body;
-//   console.log('hit the post api',car);
 
-//   const result = await carsCollection.insertOne(car);
-//   console.log(result);
-// res.json(result);
-// });
 //GET SINGLE Order 
 app.get('/orders/:id',async(req,res) => {
   const id = req.params.id;
